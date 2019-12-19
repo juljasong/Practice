@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Grade {
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("수학 점수를 입력해 주세요 : ");
+		int english = sc.nextInt();
+		System.out.print("영어 점수를 입력해 주세요 : ");
+		int math = sc.nextInt();
+		
+		int avg = (english + math) / 2;
+		
+		if (avg < 60) {
+			System.out.println('F');
+		} else if (avg < 70) {
+			System.out.println('D');
+		} else if (avg < 80) {
+			System.out.println('C');
+		} else if (avg < 90) {
+			System.out.println('B'); 
+		} else {
+			System.out.println('A');
+		}
+	}
+
+}

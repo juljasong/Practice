@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Grade.java&apos; to &apos;191208/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;191208&apos;&#x0D;&#x0A;- Destination element: &apos;191208/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;Grade.java&apos;" description="Copy compilation unit" destination="/src&lt;" element1="/src&lt;{Grade.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1575814669773" units="1" version="1.0"/>
+</session>
