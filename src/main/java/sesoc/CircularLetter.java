@@ -19,7 +19,7 @@ public class CircularLetter{
                 result = false;
                 break;
             }
-        }if(result)
+        } if (result)
             System.out.println(temp + "는 회문이 아닙니다.");
         else
             System.out.println(temp + "는 회문입니다.");
