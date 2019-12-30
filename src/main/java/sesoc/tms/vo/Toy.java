@@ -14,8 +14,8 @@ public class Toy implements Serializable {
 		this.serialNum = serialNum;
 		this.name = name;
 		this.price = price;
-
 	}
+	
 	public String getName() {
 		return name;
 	}

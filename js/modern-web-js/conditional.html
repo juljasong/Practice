@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+      /*
+      var input = prompt('입력하세요', '안녕/잘자');
+      
+      if (input.indexOf('안녕') >= 0) {
+        alert('안녕하세요.');
+      } else if (input.indexOf('잘 자') >= 0 || input.indexOf('잘자') >= 0) {
+        alert('안녕히 주무세요.');
+      } else {
+        alert('인사를 안 하다니');
+      }
+      */
+
+      var input = prompt('숫자를 입력하세요');
+
+      if (input % 4 == 0) {
+        if(input == 0){
+        alert('0입니다.');
+        } else {
+        alert('4로 나눌 수 있는 숫자입니다.');
+        }
+      } else if (input > 0) {
+        alert('양수입니다.');
+      } else if (input < 0) {
+        alert('음수입니다.');
+      }
+    </script>
+  </body>
+</html>
