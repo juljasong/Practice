@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+
+            /*
+            var width = prompt('밑변');
+            var height = prompt('높이');
+            function pythagoras(width, height){
+
+                function square(number) {
+                return number*number;
+                }
+
+                return Math.sqrt(square(width) + square(height));
+            }
+            
+            alert(pythagoras(width, height));
+            */
+
+            /*
+            function test(a,b,c) {
+                console.log(a);
+                console.log(a*b);
+                console.log(a*b*c); 
+            }
+            test(10, 100);
+            */
+
+            /*    
+            function power() {
+                var length = arguments.length;
+                if (length == 1) {
+                    return (arguments[0] * arguments[0]);
+                } else if (length == 2) {
+                    var ze = 1;
+                    for (var i = 0 ; i < arguments[1] ; i++){
+                        ze *= arguments[0];
+                    }
+                    return ze;
+                }
+            }
+            alert(power(10, 10));
+            */
+
+            /*
+            function power() {
+                var length = arguments.length;
+                if (length == 1) {
+                    alert(arguments[0] * arguments[0]);
+                } else if (length == 2) {
+                    var ze = 1;
+                    for (var i = 0 ; i < arguments[1] ; i++){
+                        ze *= arguments[0];
+                    }
+                    alert(ze);
+                }
+            }
+            power(10, 4);
+            */
+
+            /*
+            function multiply() {
+                var multi = 1;
+                for(var i = 0 ; i < arguments.length ; i++) {
+                    multi *= arguments[i];
+                }
+                alert(multi);
+            }
+            multiply(2, 4, 5, 6, 7);
+            */
+
+            
+            
+            var user = prompt('숫자나 문자를 입력해주세요. 죶같아요');
+
+            //function what(user) {
+                if(isNaN(Number(user))) {
+                    alert('문자입니다.');   
+                } else {
+                    alert('숫자입니다.');
+                }
+            //}
+            //what(user);
+            
+      
+    </script>
+  </body>
+</html>
