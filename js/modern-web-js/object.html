@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+
+      
+      var output = '';
+      var student = {
+       이름 : '도현',
+       국어 : 92, 수학 : 98, 영어 : 96, 과학 : 98
+      };
+      
+      // 속성 추가 + toString 메소드 추가
+      student.총점 = student.과학 + student.국어 + student.수학 + student.영어;
+      student.성별 = '여자';
+      student.toString = function() {
+        for (var key in this) {
+          if (key != 'toString'){
+          output += key + ' : ' + this[key] + '\n';
+          }
+        }
+      return output;
+      }
+
+      //alert(student.toString());
+      delete(student.성별);
+      alert(student);
+
+
+      /*
+      // in
+      output += "'이름' in student : " + ('이름' in student) + '\n'; // '이름' in student : true
+      output += "'성별' in student : " + ('성별' in student) + '\n'; // '성별' in student : false
+      alert(output);
+      */
+
+      /*
+      // with
+      with (student) {
+        output += '이름: ' + 이름 + '\n';
+        output += '국어: ' + 국어 + '\n';
+        output += '수학: ' + 수학 + '\n';
+        output += '영어: ' + 영어 + '\n';
+        output += '과학: ' + 과학 + '\n';
+        output += '총점: ' + 총점 + '\n';
+      }
+      alert(output);
+      */
+      
+    </script>
+  </body>
+</html>
