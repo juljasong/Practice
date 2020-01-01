@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+
+      /*
+        function makeStudent(name, kor, eng, math) {
+            var willReturn = {
+                이름 : name,
+                국어 : kor,
+                영어 : eng,
+                수학 : math,
+
+                getSum : function() {
+                    return this.국어 + this.수학 + this.영어;
+                },
+                getAvg : function() {
+                    return this.getSum() / 3;
+                },
+                toString : function() {
+                    return this.이름 + ' ' + this.getSum() + ' ' + this.getAvg() + '\n';
+                }
+            };
+            return willReturn;
+        }
+
+        var students = [];
+
+        students.push(makeStudent('이윤선', 100, 100, 100));
+        students.push(makeStudent('최지인', 90, 90, 95));
+        students.push(makeStudent('송율리아', 100, 95, 100));
+
+        var output = '';
+        for (var i in students){
+        //    with(students[i]) {
+        //        output += this.toString() + '\n';
+        //    }
+        output += students[i].toString() + '\n';
+        }
+        alert(output);
+        */
+
+        /*
+        var book = {
+          이름 : 'Nature of Code',
+          가격 : '30000원',
+          저자 : '다니엘 쉬프만',
+          ISBN : 9788968481901,
+          페이지_수 : '620페이지'
+        };
+
+        alert(book.이름 + ' ' + book.저자  + ' ' + book.가격);
+        */
+
+        /*
+        var bugs = [];
+
+        bugs.push({ 이름 : '일벌레', 미네랄 : 50, 가스 : 0, 보급품 : 1 });
+        bugs.push({ 이름 : '여왕', 미네랄 : 150, 가스 : 0, 보급품 : 2 });
+        bugs.push({ 이름 : '바퀴', 미네랄 : 75, 가스 : 25, 보급품 : 2 });
+
+        var output = '';
+        for (var i in bugs) {
+          with (bugs[i]) {
+            output += 이름 + ' ' + 미네랄 + ' ' + 가스 + ' ' + 보급품 + '\n';
+          }
+        }
+        alert(output);
+        */
+
+        let obj = {
+          '+' : 1,
+          '-' : 2,
+          '*' : 3,
+          '/' : 4
+        };
+
+        alert(obj['+']);
+        alert(obj['-']);
+        alert(obj['*']);
+        alert(obj['/']);
+    </script>
+  </body>
+</html>
