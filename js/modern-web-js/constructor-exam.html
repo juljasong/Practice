@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+
+        /*
+        function Product(product, weight, price) {
+            var product = product;
+            var weight = weight;
+            var price = price;
+
+            this.getWeight = function() {
+                return weight;
+            }
+            this.getPrice = function() {
+                return price;
+            }
+        }
+        Product.prototype.calculate = function(w) {
+            return this.getPrice() * (w/100); 
+        };
+
+        var c1 = new Product('돼지삼겹살', 100, 1690);
+
+        alert(c1.calculate(200) + '원');
+        */
+
+        let number = 273;
+        number.print = function() {
+            console.log(this);
+        };
+        
+        number.print();
+        number.print();
+        number.print();
+      
+    </script>
+  </body>
+</html>

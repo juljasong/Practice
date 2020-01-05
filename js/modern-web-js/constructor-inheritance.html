@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+    <script>
+        
+        function Rectangle(w, h) {
+            var width = w;
+            var height = h;
+
+            this.getWidth = function() {
+                return width;
+            };
+            this.getHeight = function() {
+                return height;
+            };
+            this.setWidth = function(w) {
+                if (w < 0) {
+                    throw '길이는 음수일 수 없습니다.';
+                } else {
+                    width = w;
+                }
+            };
+            this.setHeight = function(h) {
+                if (h < 0) {
+                    throw '길이는 음수일 수 없습니다.';
+                } else {
+                    height = h;
+                }
+            };
+            Rectangle.prototype.getArea = function() {
+                return this.getHeight() * this.getWidth();
+            };
+        }
+
+            /* Inheritance : 상속 */
+
+        function Square(length) {
+            this.base = Rectangle; // base에 생성자 함수 Rectangle을 넣고  => Rectangle의 속성을 Square 객체에 추가
+            this.base(length, length); // 실행
+         };
+
+         Square.prototype = Rectangle.prototype; // Square의 프로토타입에 Rectangle의 프로토타입을 넣음 => Rectangle 객체의 프로토타입이 가진 속성 혹은 메소드를 Square 객체의 프로토타입에 복사
+         // Square.prototype.constructor = Square; // 없어도 정상적으로 작동...
+
+         var rectangle = new Rectangle(7, 5);
+         var square = new Square(5);
+         //rectangle.setHeight(-6);
+
+         alert(square instanceof Rectangle); // => square는 Rectangle에 상속됐음을 의미
+         //alert(rectangle.getArea() + ' ' + square.getArea());
+         
+
+    </script>
+  </body>
+</html>
