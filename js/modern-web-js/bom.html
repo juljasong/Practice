@@ -2,16 +2,66 @@
 <html>
   <head>
     <title>브라우저 객체 모델</title>
+    <script>
+      var audio = new Audio('touch_me.mp3');
+    </script>
   </head>
   <body>
+    <button onclick="audio.play()">PLAY</button>
+    <button onclick="audio.pause()">PAUSE</button>
+    <input type="number" onchange="audio.currentTime=this.value"/>
+    <input type="number" onchange="audio.volume=this.value"/>
     <script>
-
+      /*
       // window object
       var output = '';
       for (var key in window) {
         output += '* ' + key + ' : ' + window[key] + '\n';
       }
       alert(output);
+      */
+      //var child = window.open('', '', 'width=300, height=200');
+      //child.document.write('<h1> Hello </h1>');
+
+      /*
+      child.moveTo(0 ,0); // 절대 위치 설정
+
+      setInterval(function() { 
+        child.moveBy(10, 10);
+      }, 1000); // 1초마다 왼쪽, 아래로 10픽셀 씩 이동
+      */
+
+      /*
+      // screen object
+      var output = '';
+      for(var key in screen) {
+        output += '* ' + key + ' : ' + screen[key] + '\n';
+      }
+      alert(output);
+      */
+      /*
+      var child = window.open('', '', 'width=300, height=200');
+      var width = screen.width;
+      var height = screen.height;
+
+      child.moveTo(0, 0);
+      child.resizeTo(width, height);
+
+      setInterval(function() {
+        child.resizeBy(-20, -20);
+        child.moveTo(10, 10);
+      }, 1000);
+      */
+      /*
+      var output = '';
+      for(var key in location) {
+        output += '* ' + key + ' : ' + location[key] + '\n';
+      }
+      alert(output);
+      */
+      
+
     </script>
+
   </body>
 </html>
