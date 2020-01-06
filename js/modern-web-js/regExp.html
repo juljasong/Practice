@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>정규표현식</title>
+  </head>
+  <body>
+    <script>
+
+      /*
+      var string = prompt('소문자 또는 숫자로만 구성된 단어를 입력하세요.', '단어');
+      var regExp = /([0-9]|[a-z])/g;
+      if (string.replace(regExp, '').length == 0) {
+        alert("감사합니다");
+      } else {
+        alert("ㅁㅅㅁ");
+      }
+      */
+    
+    /*
+      function isKoreanName(string) {
+      var regExp = /([가-힣])/g;
+      var replaceString = string.replace(regExp, '');
+      if(replaceString.length == 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    var string = prompt('이름을 입력해주세요.', '이름');
+    alert(isKoreanName(string));
+    */
+
+    function isEmail(string){
+      var regExp = /\w+@\w+\.\w+/;
+      return regExp.test(string);
+    }
+    alert(isEmail('zpion@naver.com'));
+      
+    </script>
+  </body>
+</html>
