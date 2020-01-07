@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javaScript</title>
+  </head>
+  <body>
+      <h1 id="header-1">Header1</h1>
+      <h1 id="header-2">Header2</h1>
+    <script>
+
+        /*
+        // 텍스트 노드를 갖는 노드 생성
+        window.onload = function() {
+            var header = document.createElement('h1'); // 요소 노드 생성
+            var textNode = document.createTextNode('Hello DOM'); // 텍스트 노드 생성
+
+            // 노드 연결
+            header.appendChild(textNode);
+            document.body.appendChild(header); // body 문서 객체에 header 문서 객체 추가
+        };
+        */
+      /*
+      // 텍스트 노드를 갖지 않는 노드 생성
+      window.onload = function() {
+          var img = document.createElement('img');
+          //img.src = 'chiaki.jpg';
+          //img.width = 700;
+          img.setAttribute('src', 'chiaki.jpg');
+          img.setAttribute('width', 700);
+
+          img.setAttribute('data-property', 350); // 이게 뭐죠
+
+          document.body.appendChild(img); // 노드 연결
+      };
+      */
+      /*
+      // innerHTML
+      window.onload = function () {
+          var output = '';
+          output += '<ul>';
+          output += '   <li>JavaScript</li>';
+          output += '   <li>jQuery</li>';
+          output += '</ul>';
+          document.body.innerHTML = output;
+          document.body.innerHTML += '<h1> DOM </h1>';
+      };
+      */
+
+      // getElementById()
+      window.onload = function() {
+          var header1 = document.getElementById('header-1');
+          var header2 = document.getElementById('header-2');
+          header1.innerHTML = 'with getElementById()';
+          header2.innerHTML = 'with what?';
+      }
+
+    </script>
+  </body>
+</html>
