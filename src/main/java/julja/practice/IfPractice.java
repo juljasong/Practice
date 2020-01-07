@@ -72,6 +72,23 @@ public class IfPractice {
 		}
 		System.out.println(sum);
      */
+    
+    int sum = 0;
+    int i = 1;
+    
+    while(true) {
+      if (i % 2 == 0) {
+        sum -= i;
+      } else {
+        sum += i;
+      }
+      if (sum >= 100)
+        break;
+      i++;
+    }
+    System.out.println(sum +", " + i);
+    
+    
     /*
 		int i = 0, j;
 		while (i <= 10) {
