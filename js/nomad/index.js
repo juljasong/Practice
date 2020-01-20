@@ -1,38 +1,22 @@
-function profile (name, age) {
-    //console.log('Hi, My name is', name, 'and i\'m',  age, 'years old');
-    //console.log(`Hello, My name is ${name}, and i'm ${age} years old.`);
+/* DOM : Document Object Model */
 
-    return `Hello, My name is ${name}, and i'm ${age} years old!`;
+const title = document.querySelector('#title');
+title.innerHTML = '집에 가고 싶어요';
+
+function handleClickRed() {
+  title.style.color = 'red';
 }
 
-//profile('Julia', 27);
-const greet = profile('Julia', 27);
-console.log(greet);
-//alert(greet);
+function handleClickBlue() {
+  title.style.color = '#34495e';
+}
+
+//title.addEventListener('click', handleClick);
+//console.log(title);
 
 
-
-const calculator = { // 객체
-    plus : function(a, b) {
-        return a + b;
-    },
-    minus : function(a, b) {
-        return a - b;
-    },
-    multi : function(a, b) {
-        return a * b;
-    },
-    divide : function(a, b) {
-        return a / b;
-    }
-};
-
-const plus = calculator.plus(5, 6);
-
-const minus = calculator.minus(11, 2);
-
-const multi = calculator.multi(5, 6);
-
-const divide = calculator.divide(100, 10);
-
-console.log(plus, minus, multi, divide);
+if(title.style.color === 'red') {
+  title.addEventListener('click', handleClickBlue);
+} else {
+  title.addEventListener('click', handleClickRed);
+}
