@@ -1,22 +1,22 @@
 /* DOM : Document Object Model */
 
 const title = document.querySelector('#title');
-title.innerHTML = '집에 가고 싶어요';
+//title.innerHTML = '집에 가고 싶어요';
+const CLICKED_CLASS = 'clicked';
 
-function handleClickRed() {
-  title.style.color = 'red';
+function handleClick() {
+  /*
+  const hasClass = title.classList.contains(CLICKED_CLASS);
+  if(hasClass){
+    title.classList.remove(CLICKED_CLASS);
+  } else {
+    title.classList.add(CLICKED_CLASS);
+  }*/
+  title.classList.toggle(CLICKED_CLASS);
 }
 
-function handleClickBlue() {
-  title.style.color = '#34495e';
+function init() {
+  title.addEventListener('click', handleClick);
 }
 
-//title.addEventListener('click', handleClick);
-//console.log(title);
-
-
-if(title.style.color === 'red') {
-  title.addEventListener('click', handleClickBlue);
-} else {
-  title.addEventListener('click', handleClickRed);
-}
+init();
