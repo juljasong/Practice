@@ -5,13 +5,14 @@ const API_KEY = "b7a470018b3fcea9dada131b2a01b575";
 const COORDS = "coords";
 
 function getWeather(lat, lng) {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`).then(function(response){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`)
+    .then(function(response){
     return response.json();
     })
     .then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${temperature}°C @${place}`;
 
     });
     // .then -> 데이터를 다 불러온 후 실행할 기능

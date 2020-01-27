@@ -37,9 +37,26 @@ function saveName(text) {
 }
 
 function paintGreeting(text) {
+    const date = new Date();
+    const hours = date.getHours();
+
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`;
+
+    paintGreetingByTime(hours, text);
 }
+
+function paintGreetingByTime(hours, text) {
+    if(hours >= 6 && hours < 12) {
+        greeting.innerText = `Good Morning, ${text} !`;
+    } else if(hours >= 12 && hours < 18) {
+        greeting.innerText = `Good Afternoon, ${text} !`;
+    } else if(hours >= 18 && hours < 24) {
+        greeting.innerText = `Good Evening, ${text} !`;
+    } else {
+        greeting.innerText = `Good Night, ${text} !`;
+    }
+}
+
 
 init();
