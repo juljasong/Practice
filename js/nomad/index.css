@@ -30,10 +30,11 @@ h1 {
 .showing {
     display: block;
 }
-
+/* 
 .clicked {
     color: black;
 }
+*/
 
 @keyframes fadeIn{
     from {
