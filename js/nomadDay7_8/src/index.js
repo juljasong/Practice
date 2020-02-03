@@ -73,18 +73,26 @@ function paintPendingTask(text) {
 
 function paintFinishedTask(text) {
   const li = document.createElement("li");
+  const newId = finishedTasks.length + 1;
   const delBtn = document.createElement("button");
   delBtn.innerHTML = "❎";
   delBtn.addEventListener("click", deleteFinishedTask);
   const ftpBtn = document.createElement("button");
   ftpBtn.innerHTML = "⏪";
-  //ftpBtn.addEventListener("click", finishedToPending);
+  ftpBtn.addEventListener("click", finishedToPending);
   const line = document.createElement("span");
   line.innerText = text + ` `;
   li.appendChild(line);
   li.appendChild(delBtn);
   li.appendChild(ftpBtn);
+  li.id = newId;
   finishedList.appendChild(li);
+  const taskObj = {
+    text: text,
+    id: newId
+  };
+  finishedTasks.push(taskObj);
+  saveTasks(FINISHED_LS, finishedTasks);
 }
 
 function saveTasks(LS, Tasks) {
@@ -98,7 +106,7 @@ function deletePendingTask(event) {
   pendingList.removeChild(li);
 
   const cleanTask = pendingTasks.filter(function(task){
-      return task.id !== parseInt(li.id); // 리스트에 포함되지 않은 id 리턴 -> 삭제할 요소
+      return task.id !== parseInt(li.id); 
   });
   pendingTasks = cleanTask;
   saveTasks(PENDING_LS, pendingTasks);
@@ -110,15 +118,39 @@ function deleteFinishedTask(event) {
   finishedList.removeChild(li);
 
   const cleanTask = finishedTasks.filter(function(task){
-      return task.id !== parseInt(li.id); // 리스트에 포함되지 않은 id 리턴 -> 삭제할 요소
+      return task.id !== parseInt(li.id); 
   });
   finishedTasks = cleanTask;
   saveTasks(FINISHED_LS, finishedTasks);
 }
 
-function pendingToFinished() {}
+function pendingToFinished(event) {
+  const btn = event.target;
+  const li = btn.parentNode;
+  const text = li.querySelector("span");
+  paintFinishedTask(text.innerText);
+  pendingList.removeChild(li);
 
-function finishedToPending() {}
+  const cleanTask = pendingTasks.filter(function(task){
+    return task.id !== parseInt(li.id); 
+});
+pendingTasks = cleanTask;
+saveTasks(PENDING_LS, pendingTasks);
+}
+
+function finishedToPending() {
+  const btn = event.target;
+  const li = btn.parentNode;
+  const text = li.querySelector("span");
+  paintPendingTask(text.innerText);
+  finishedList.removeChild(li);
+
+  const cleanTask = finishedTasks.filter(function(task){
+    return task.id !== parseInt(li.id); 
+});
+finishedTasks = cleanTask;
+saveTasks(FINISHED_LS, finishedTasks);
+}
 
 
 init();
