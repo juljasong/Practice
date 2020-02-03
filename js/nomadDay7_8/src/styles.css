@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+/*
+h1 {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+*/
+
+.button {
+  cursor: pointer;
+}

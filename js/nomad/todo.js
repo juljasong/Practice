@@ -8,7 +8,6 @@ let toDos = [];
 function init() {
     loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
-    
 }
 
 function loadToDos() {
