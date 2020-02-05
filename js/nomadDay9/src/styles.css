@@ -1,0 +1,54 @@
+body {
+  font-family: 'Indie Flower', 'Hi Melody', cursive;
+  font-size: 20px;
+  text-align: center;
+  background-color:skyblue;
+  color: #333333;
+}
+
+h1 {
+  margin-top: 3cm;
+  margin-bottom: 0px;
+}
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.range {
+  padding: 10px 0px;
+  width: 10cm;
+}
+
+h3 {
+  margin: 0px;
+}
+
+input {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 1px;
+  font-family: 'Hi Melody', cursive;
+  font-size: 20px;
+}
+
+strong {
+  font-size: 23px;
+}
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+form {
+  margin:10px;
+}
+
+b {
+  font-size: xx-large;
+  color:darkred;
+}
