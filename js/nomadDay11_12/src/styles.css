@@ -1,0 +1,51 @@
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background-color:black;
+}
+
+input {
+  font-family: 'Dosis', sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-size: 40px;
+  margin: 3px 1px;
+  height: 60px;
+  width: 115px;
+}
+
+h1 {
+  display: inline-block;
+  height: 60px;
+  width: 350px;
+  text-align: right;
+  margin: 0px;
+  
+  background-color: black;
+  color: aliceblue;
+  margin-right: 11px;
+}
+
+.c-btn {
+  text-align: center;
+  background-color: gray;
+  color: aliceblue;
+}
+
+.num-btn, .e-btn{
+  text-align: center;
+  background-color: darkgray;
+  color: aliceblue;
+}
+
+#num0-btn {
+  width: 237px;
+}
+
+.oper-btn {
+  text-align: center;
+  background-color: orange;
+  color: aliceblue;
+}
+
