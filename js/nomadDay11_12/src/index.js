@@ -7,7 +7,6 @@
 
 const h1 = document.querySelector("h1");
 let result = "";
-let oper = "";
 let text = "";
 
 function input(input) {
@@ -15,7 +14,7 @@ function input(input) {
   if (isNaN(input)) {
     h1.innerHTML = "";
     text += input;
-  } else if (!isNaN(input) && oper === "") {
+  } else if (!isNaN(input)) {
     h1.innerHTML += `${input}`;
     text += input;
   }
@@ -27,7 +26,6 @@ function calc() {
   text = result;
   h1.innerHTML = `${text}`;
   console.log(text);
-  oper = "";
 }
 
 function init() { 
