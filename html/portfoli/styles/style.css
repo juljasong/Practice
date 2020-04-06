@@ -769,7 +769,7 @@ legend {
   font-size: 12px;
   padding: 10px;
   border-bottom: 1px solid #f7f7f7;
-  color: #888;
+  color: #777777;
 }
 
 .choices__button {
@@ -862,21 +862,21 @@ legend {
   width: 100%;
   padding: 10px 32px;
   font-size: 16px;
-  color: #888;
+  color: #777777;
 }
 
 .s003 form .inner-form .input-field input.placeholder {
-  color: #888;
+  color: #777777;
   font-size: 16px;
 }
 
 .s003 form .inner-form .input-field input:-moz-placeholder {
-  color: #888;
+  color: #777777;
   font-size: 16px;
 }
 
 .s003 form .inner-form .input-field input::-webkit-input-placeholder {
-  color: #888;
+  color: #777777;
   font-size: 16px;
 }
 
@@ -931,7 +931,7 @@ legend {
   align-items: center;
   height: 100%;
   opacity: 1;
-  color: #888;
+  color: #777777;
 }
 
 .s003
@@ -946,7 +946,7 @@ legend {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-  color: #888;
+  color: #777777;
 }
 
 .s003
@@ -987,7 +987,7 @@ legend {
   .choices__list--dropdown
   .choices__item--selectable.is-highlighted {
   background: #fff;
-  color: #888;
+  color: #777777;
 }
 
 .s003
@@ -996,7 +996,7 @@ legend {
   .input-field.first-wrap
   .choices__list--dropdown
   .choices__item {
-  color: #888;
+  color: #777777;
   min-height: 24px;
 }
 
@@ -1022,11 +1022,11 @@ legend {
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg {
   width: 16px;
-  color: #888;
+  color: #777777;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search:hover {
-  background: #888;
+  background: #777777;
 }
 
 .s003 form .inner-form .input-field.third-wrap .btn-search svg:hover {
@@ -1101,7 +1101,7 @@ hr {
 .btn-small {
   height: 20x;
   width: 60x;
-  background-color: #888;
+  background-color: #777777;
   border: none;
   border-radius: 8px;
   font-size: 15px;
@@ -1115,7 +1115,7 @@ hr {
 i {
   opacity: 0;
   font-size: 28px;
-  color: #1F1E1E;
+  color: #777777;
   will-change: transform;
   -webkit-transform: scale(.1);
           transform: scale(.1);
@@ -1164,7 +1164,7 @@ i {
   line-height: 70px;
   letter-spacing: 2px;
   color: #EEEEED;
-  background-color: #1F1E1E;
+  background-color: #333;
   padding: 0 18px;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
